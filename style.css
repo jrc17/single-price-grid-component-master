@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  line-height: 1;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+}
+main {
+  max-width: 22rem;
+  display: grid;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: 0rem 0rem 1.5rem 0.1rem rgba(0, 0, 0, 0.12);
+}
+h2 {
+  font-size: 1.22rem;
+  margin-bottom: 0.5rem;
+}
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.info-container {
+  background-color: #fff;
+}
+.info-container h1 {
+  color: #2ab2af;
+  font-size: 1.4rem;
+}
+.sub-heading {
+  color: #c0df34;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 1rem;
+}
+.info-text {
+  color: #98a6bd;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+.subscription-container {
+  background-color: #2ab2af;
+  color: #fff;
+}
+.price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.price-amount {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.month {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+}
+.access-info {
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 1.05rem;
+}
+.btn:link,
+.btn:visited,
+.btn:active,
+.btn:hover {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: #c0df34;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  box-shadow: 0rem 0.5rem 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
+}
+.why-us-container {
+  background-color: rgba(42, 178, 176, 0.85);
+  color: #fff;
+}
+.why-us-container ul {
+  list-style: none;
+  color: rgba(255, 255, 255, 0.65);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media screen and (min-width: 40rem) {
+  main {
+    max-width: 45rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    /* padding-right: 3rem; */
+  }
+  .info-container {
+    grid-column: 1/-1;
+  }
+  .info-container h1 {
+    font-size: 1.6rem;
+  }
+  .sub-heading {
+    font-size: 1.2rem;
+  }
+  .info-text {
+    font-size: 1.13rem;
+    line-height: 1.5;
+  }
+  .subscription-container {
+    padding-right: 3rem;
+  }
+}
